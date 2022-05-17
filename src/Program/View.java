@@ -1,7 +1,7 @@
 /*
  * Jakob Mukka
  *
- * Version 1,1 Date: 2020-08-26
+ * Version 1,1 Date: 2022-05-17
  *
  * This is the View (following the MVC format) class of the RadioInfo program.
  * This class is used to create the GUI for the program.
@@ -148,7 +148,11 @@ public class View {
         updatingRadioInfo = new JDialog(frame, "Updating Radio Info...");
         loadingRadioInfo.setBounds(325,100,250, 100);
         updatingRadioInfo.setBounds(325,100,250,100);
-
+		
+		// The JDialogs are set to dispose on close
+		loadingRadioInfo.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+		updatingRadioInfo.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+		
         // Adding Panel to the Frame
         frame.add(panel);
     }
@@ -349,7 +353,7 @@ public class View {
     public JButton getUpdateButton () {
         return updateButton;
     }
-
+	
     /*
      * This is a nested inner class for my table cell renderer.
      */

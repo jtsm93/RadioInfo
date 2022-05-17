@@ -1,7 +1,7 @@
 /*
  * Jakob Mukka
  *
- * Version 1,1 Date: 2020-08-26
+ * Version 1,1 Date: 2020-05-17
  *
  * This is the Control (following the MVC format) class of the RadioInfo program.
  * This class gets the channels and each channels schedule from the ScheduleCreator and ChannelsCreator
@@ -73,7 +73,7 @@ public class Control {
             Schedule p1 = scheduleCreator.getChannelSchedule(channels.get(0).getChannelID());
             setChannelSchedule(p1, channels.get(0).getChannelName());
 
-            // Sets the visibility of the loading window as true as the whole GUI should now be visible
+            // Sets the visibility of the loading window as false as the whole GUI should now be visible
             view.setLoadingRadioInfoVisibility(false);
 
             // Action listeners for the channel buttons, which changes the schedule in the table
