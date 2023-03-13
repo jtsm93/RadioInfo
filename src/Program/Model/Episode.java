@@ -27,7 +27,6 @@ public class Episode {
     private String episodeStartTime;
     private String episodeEndTime;
     private String episodeDescription;
-    //private int episodeNumber;
     private JLabel episodeImage;
 
     /**

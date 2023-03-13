@@ -17,7 +17,7 @@ public class Channel {
     private Schedule schedule;
 
     /**
-     * Constructor or Channel
+     * Constructor of Channel
      */
     public Channel () {
 
